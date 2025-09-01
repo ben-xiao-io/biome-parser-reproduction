@@ -1,5 +1,4 @@
 {
-	"root": false,
 	"extends": "//",
 	"javascript": {
 		"parser": {
