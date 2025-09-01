@@ -1,0 +1,32 @@
+{
+  "python.testing.unittestArgs": ["-v", "-s", "-p", "*test.py"],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": true,
+  // Format on save globally
+  "editor.formatOnSave": true,
+  // Prettier by default
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "biome.requireConfiguration": false,
+  // Force Biome for JS
+  "[javascript][javascriptreact][typescript][typescriptreact][jsonc][css]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
+
+  "editor.codeActionsOnSave": {
+    // Biome
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit",
+    // Ruff
+    "source.fixAll.ruff": "explicit",
+    "source.organizeImports.ruff": "explicit"
+  }
+}
